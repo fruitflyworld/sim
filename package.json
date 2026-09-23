@@ -1,0 +1,24 @@
+{
+  "name": "@fruitflyworld/sim",
+  "version": "0.2.0",
+  "description": "The fruitflyworld simulation core: the dish world, the LC4/LPLC2→Giant-Fiber escape circuit, and a pluggable brain contract. Zero dependencies, zero build.",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fruitflyworld/sim.git"
+  },
+  "keywords": [
+    "neuroscience",
+    "connectome",
+    "simulation",
+    "game-ai",
+    "fruit-fly",
+    "deterministic",
+    "lif-neuron"
+  ],
+  "license": "MIT",
+  "homepage": "https://fruitfly.world"
+}
