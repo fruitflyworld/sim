@@ -48,8 +48,12 @@ import { createCircuitBrain } from "./brain-circuit.js";
 import { createLocalBrain } from "./brain-local.js";
 import { createBrainDriver } from "./brain-driver.js";
 import { contentHash } from "./brain.js";
+import { dcos, dsin, datan } from "./dmath.js";
 
-export const WORLD_VERSION = "dish/2";
+// dish/3: all sim-lane trig/exp goes through dmath.js kernels so arm64 Chrome
+// and x64 Node produce bit-identical worlds (Math.sin/cos/exp differ in the
+// last ulp across architectures — see dmath.js header).
+export const WORLD_VERSION = "dish/3";
 
 // autopilot()'s deterministic default draft policy (economy first).
 const PREF = ["forager", "fecund", "hardy", "thrift", "nocturnal", "white", "curly", "swift"];
@@ -64,7 +68,7 @@ const PLAYER_GENES = { food: .6, threat: .7, light: .3, novelty: .4, forage: .5 
 
 function randomInDishR(r, maxR) {
   const a = r() * Math.PI * 2, rr = Math.sqrt(r()) * maxR;
-  return { x: Math.cos(a) * rr, y: Math.sin(a) * rr };
+  return { x: dcos(a) * rr, y: dsin(a) * rr };
 }
 
 // ============================== flies ==============================
@@ -124,7 +128,7 @@ function findThreatW(world, fly) {
 
 function lightPosW(world) {
   const a = world.genElapsed / CYCLE_SEC * Math.PI * 2;
-  return { x: Math.cos(a) * 0.5, y: Math.sin(a) * 0.5 };
+  return { x: dcos(a) * 0.5, y: dsin(a) * 0.5 };
 }
 
 function lightSignalW(world, fly) {
@@ -164,7 +168,7 @@ function brainSteerW(world, fly) {
   if (beh === "avoid") { const th = findThreatW(world, fly); if (th) return th.dirAway; }
   if (beh === "approach") { const f = findNearestFoodW(world, fly); if (f) return f.dir; }
   fly.wanderAngle += (world.rng() - 0.5) * 0.5;
-  return normalize({ x: Math.cos(fly.wanderAngle), y: Math.sin(fly.wanderAngle) });
+  return normalize({ x: dcos(fly.wanderAngle), y: dsin(fly.wanderAngle) });
 }
 
 function decideSteerW(world, fly) {
@@ -176,7 +180,7 @@ function decideSteerW(world, fly) {
   const l = lightSignalW(world, fly);
   if (l.signal > 0) { s.x += l.dir.x * fly.genes.light * l.signal; s.y += l.dir.y * fly.genes.light * l.signal; }
   fly.wanderAngle += (world.rng() - 0.5) * 0.5;
-  s.x += Math.cos(fly.wanderAngle) * 0.12; s.y += Math.sin(fly.wanderAngle) * 0.12;
+  s.x += dcos(fly.wanderAngle) * 0.12; s.y += dsin(fly.wanderAngle) * 0.12;
   return normalize(s);
 }
 
@@ -199,7 +203,7 @@ function updateGFW(world, fly, dt) {
   let size = 0, vel = 0;
   if (world.predator.alive) {
     const d = Math.max(0.02, dist(fly, world.predator));
-    const theta = 2 * Math.atan(GF.PRED_ANG_R / d);
+    const theta = 2 * datan(GF.PRED_ANG_R / d);
     vel = Math.max(0, (theta - g.prevTheta) / Math.max(dt, 1e-3));
     g.prevTheta = theta;
     if (d <= PRED_VISUAL) { size = theta; }
@@ -249,7 +253,7 @@ function relocateFoodW(world, item, fly) {
   const roverFactor = fly.stats.rover ? 0.15 : 0;
   if (item.type === "yeast") {
     const a = world.rng() * Math.PI * 2, rr = 0.72 + world.rng() * 0.2 + roverFactor;
-    item.x = Math.cos(a) * Math.min(0.94, rr); item.y = Math.sin(a) * Math.min(0.94, rr);
+    item.x = dcos(a) * Math.min(0.94, rr); item.y = dsin(a) * Math.min(0.94, rr);
   } else {
     const p = randomInDishR(world.rng, Math.min(0.94, 0.85 + roverFactor));
     item.x = p.x; item.y = p.y;
@@ -268,8 +272,8 @@ function updateFlyW(world, fly, dt, events) {
   if (!(fly.isPlayer && world.driveMode === "manual") && fly.gf.armed) tryDashW(world, fly, events);
   const steerRaw = getSteerW(world, fly);
   const steer = fly.stats.adh && fly.boostT > 0 ? normalize({
-    x: steerRaw.x * fly.stats.speedTurn + Math.cos(fly.angle) * (1 - fly.stats.speedTurn),
-    y: steerRaw.y * fly.stats.speedTurn + Math.sin(fly.angle) * (1 - fly.stats.speedTurn)
+    x: steerRaw.x * fly.stats.speedTurn + dcos(fly.angle) * (1 - fly.stats.speedTurn),
+    y: steerRaw.y * fly.stats.speedTurn + dsin(fly.angle) * (1 - fly.stats.speedTurn)
   }) : steerRaw;
   const inDiapause = fly.stats.diapause && fly.energy < 30;
   const diapauseSlow = inDiapause ? 0.6 : 1;
@@ -469,7 +473,7 @@ function resetGenerationWorld(world) {
   world.food = [];
   const nSugar = Math.max(4, FOOD_COUNT - Math.floor((gen - 1) / 2)), nYeast = 2 + Math.floor(gen / 4), nRot = 2 + Math.floor(gen / 5);
   for (let i = 0; i < nSugar; i++) { const p = randomInDishR(world.rng, 0.85); world.food.push({ x: p.x, y: p.y, type: "sugar" }); }
-  for (let i = 0; i < nYeast; i++) { const a = world.rng() * Math.PI * 2, r = 0.72 + world.rng() * 0.2; world.food.push({ x: Math.cos(a) * r, y: Math.sin(a) * r, type: "yeast" }); }
+  for (let i = 0; i < nYeast; i++) { const a = world.rng() * Math.PI * 2, r = 0.72 + world.rng() * 0.2; world.food.push({ x: dcos(a) * r, y: dsin(a) * r, type: "yeast" }); }
   for (let i = 0; i < nRot; i++) { const p = randomInDishR(world.rng, 0.85); world.food.push({ x: p.x, y: p.y, type: "rot" }); }
 
   world.eggs = [];
@@ -580,7 +584,7 @@ export function stepWorld(world, dt) {
   if (world.running && !world.ended && world.started) {
     const dtSim = dtReal * dtScale;
     world.simTime += dtSim; world.genElapsed += dtSim;
-    world.nightFactor = (1 - Math.cos(2 * Math.PI * world.genElapsed / CYCLE_SEC)) / 2;
+    world.nightFactor = (1 - dcos(2 * Math.PI * world.genElapsed / CYCLE_SEC)) / 2;
     updateFlyW(world, world.playerFly, dtSim, events);
     updateFlyW(world, world.rivalFly, dtSim, events);
     updatePredatorW(world, dtSim, events);
