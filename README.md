@@ -20,6 +20,8 @@ vendors these files.
 | Module | What it holds |
 | --- | --- |
 | [`js/sim.js`](js/sim.js) | The deterministic dish world: seeded RNG (`makeRng`), the mutation draft (`draftCards`, `draftSeed`), the escape assay and the real-vs-swapped wiring check (`runExperiment`) |
+| [`js/dmath.js`](js/dmath.js) | Deterministic math kernels: `dsin`/`dcos`/`dexp`/`datan` built only from IEEE-pinned operations, because `Math.sin/cos/exp/atan` differ in the last ulp across CPU architectures (~3%–5.6% of inputs, arm64 vs x64). The sim lane runs on these; render code may keep `Math.*` |
+| [`js/world.js`](js/world.js) | The whole autopilot lane as a pure Node module (`runLineage`): food, predator, drafts, brains, generations — no DOM, no Phaser, byte-faithful to the browser including its cross-generation artifacts. `WORLD_VERSION` tracks world semantics (currently `dish/3`) |
 | [`js/gf-neuron.js`](js/gf-neuron.js) | The brainstem: a leaky integrate-and-fire **Giant Fiber** driven by **LC4** (angular velocity) and **LPLC2** (looming) — the two visual neurons that dominate the real fruit fly's escape command cell |
 | [`js/cx-circuit.js`](js/cx-circuit.js) | **FFW-CX/0.1** — a 24-neuron spiking circuit with connectome-inspired structure. All randomness is at construction time, which is what makes it examinable |
 | [`js/brain.js`](js/brain.js) | The brain contract: signals in → behavior distribution + confidence out, every decision sealed with a FNV-1a `contentHash` |
@@ -32,7 +34,7 @@ Each `.js` ships with a sibling `.d.ts`.
 
 ## The pinned numbers
 
-These are not aspirations; they are assertions. `npm test` (36 tests, Node 22's built-in
+These are not aspirations; they are assertions. `npm test` (38 tests, Node 22's built-in
 runner — no install step) fails if any of them drift:
 
 | Fact | Value | Source |
@@ -42,7 +44,9 @@ runner — no install step) fails if any of them drift:
 | FFW-CX behavior trace, seed 42 | `contentHash = 9fb9e0d0` | `tests/cx-circuit.test.ts` |
 | FFW-CX hunger assay, bucket 1 | 274 of 300 ticks | `tests/cx-circuit.test.ts` |
 | Mutation draft golden vector | `contentHash = 0f4d39c3` | `tests/sim-cards.test.ts` |
+| Rival genes, seed 1337 | `contentHash = e9b1d202` | `tests/sim-cards.test.ts` |
 | Escape trial seed 12345, real | `{escaped: true, lead: 0.1833…}` | `tests/gf-neuron.test.ts` |
+| 60-case golden baseline vs `world.js` | **1260/1260 field checks identical** (3 brains × 20 seeds × 3 gens, arm64 Chrome vs x64 Node) | `tests/world-parity.test.ts` + `tests/golden/baseline-dish3.json` |
 
 The 100/68 pair is a **simplified two-channel wiring check**, not a control experiment on
 the connectome: within this model, real-beats-swapped holds by construction, and the escape
