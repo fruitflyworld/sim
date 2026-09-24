@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { makeRng, draftCards, draftSeed, STACKABLE, NAMED_ONCE } from "../js/sim.js";
+import { makeRng, draftCards, draftSeed, rollRivalGenes, seedRng, randRange, STACKABLE, NAMED_ONCE } from "../js/sim.js";
 import { contentHash } from "../js/brain.js";
 
 test("makeRng: same seed replays the same stream, different seeds diverge", () => {
@@ -50,4 +50,28 @@ test("draftSeed: mixes every input; commutative inputs do not collide trivially"
   assert.notEqual(draftSeed(42, 3, 7, 5), draftSeed(42, 3, 5, 7));
   assert.notEqual(draftSeed(42, 3, 7, 5), draftSeed(43, 3, 7, 5));
   assert.equal(draftSeed(42, 3, 7, 5), draftSeed(42, 3, 7, 5));
+});
+
+test("rollRivalGenes: pure, and bit-identical to the legacy create()-time roll (golden pinned)", () => {
+  // dish/2 determinism fix: the rival's genes must be a pure function of the
+  // world seed. For a fresh profile (worldSeed 1337) the values must equal
+  // what the old shared-stream roll produced, so fresh-visitor play is
+  // unchanged — any change to the draw numerics breaks this hash.
+  const g = rollRivalGenes(1337);
+  assert.deepEqual(g, rollRivalGenes(1337));
+  // legacy equivalence: seedRng(1337) then the same five randRange draws
+  seedRng(1337);
+  const legacy = {
+    food: randRange(.4, .9), threat: randRange(.4, .9),
+    light: randRange(0, .5), novelty: randRange(.1, .6), forage: randRange(.3, .8),
+  };
+  assert.deepEqual(g, legacy);
+  assert.equal(contentHash(Object.values(g)), "e9b1d202");
+  // different seeds give a different wild type
+  assert.notDeepEqual(rollRivalGenes(42), g);
+  // the roll never touches the shared stream
+  seedRng(123); rollRivalGenes(1337); rollRivalGenes(42);
+  const after = randRange(0, 1);
+  seedRng(123);
+  assert.equal(after, randRange(0, 1));
 });
