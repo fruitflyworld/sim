@@ -1,0 +1,1986 @@
+{
+  "version": "baseline-dish/3",
+  "note": "browser autopilot, fixed 60 Hz, deterministic brains",
+  "cases": [
+    {
+      "seed": 1,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 8,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 9,
+          "rivalEggs": 16,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 19,
+          "rivalEggs": 19,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 15,
+          "rivalEggs": 14,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 22,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 8,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 14,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 24,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 20,
+          "rivalEggs": 16,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 5,
+          "rivalEggs": 19,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 20,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 14,
+          "rivalEggs": 2,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 23,
+          "rivalEggs": 4,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 24,
+          "rivalEggs": 2,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 11,
+          "rivalEggs": 20,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 16,
+          "rivalEggs": 19,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 14,
+          "rivalEggs": 2,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 8,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 6,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 5,
+          "rivalEggs": 1,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 12,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 22,
+          "rivalEggs": 7,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 7,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 10,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 8,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 15,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 16,
+          "rivalEggs": 3,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 16,
+          "rivalEggs": 1,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 17,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 10,
+          "rivalEggs": 13,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 5,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 11,
+          "rivalEggs": 13,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 18,
+          "rivalEggs": 19,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 12,
+          "rivalEggs": 17,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 7,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 9,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 11,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 15,
+          "rivalEggs": 3,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 10,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 17,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 7,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 14,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 4,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 12,
+          "rivalEggs": 19,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 4,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 9,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 11,
+          "rivalEggs": 3,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 10,
+          "rivalEggs": 20,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 23,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 5,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 20,
+          "rivalEggs": 7,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 11,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 13,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 8,
+          "rivalEggs": 4,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 5,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "brain": "genes",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 6,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 2,
+          "eggs": 14,
+          "rivalEggs": 8,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 0,
+          "logHash": "741638a5"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 0,
+          "logHash": "741638a5"
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 148,
+          "logHash": "fe6cb53c"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 181,
+          "logHash": "d2d9254c"
+        },
+        {
+          "gen": 3,
+          "eggs": 4,
+          "rivalEggs": 12,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 222,
+          "logHash": "5870d6b0"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 81,
+          "logHash": "52a51e78"
+        },
+        {
+          "gen": 2,
+          "eggs": 4,
+          "rivalEggs": 13,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 340,
+          "logHash": "bc120125"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 312,
+          "logHash": "8b07dd14"
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 5,
+          "rivalEggs": 16,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 430,
+          "logHash": "1ae00e13"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 184,
+          "logHash": "bbaf9be9"
+        },
+        {
+          "gen": 3,
+          "eggs": 2,
+          "rivalEggs": 12,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 211,
+          "logHash": "59ff934b"
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 188,
+          "logHash": "db378447"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 282,
+          "logHash": "8a56e01e"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 276,
+          "logHash": "834e0324"
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 143,
+          "logHash": "4e770d51"
+        },
+        {
+          "gen": 2,
+          "eggs": 3,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 278,
+          "logHash": "55bca612"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 237,
+          "logHash": "04911307"
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 68,
+          "logHash": "52919169"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 150,
+          "logHash": "914119f0"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 48,
+          "logHash": "d5670b89"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 55,
+          "logHash": "bf62b683"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 86,
+          "logHash": "0cdae521"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 17,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 431,
+          "logHash": "6a9d983d"
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 144,
+          "logHash": "b419085e"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 266,
+          "logHash": "3dc35861"
+        },
+        {
+          "gen": 3,
+          "eggs": 5,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 282,
+          "logHash": "e8afac13"
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 161,
+          "logHash": "ef54a938"
+        },
+        {
+          "gen": 2,
+          "eggs": 3,
+          "rivalEggs": 8,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 431,
+          "logHash": "d8e86b5d"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 62,
+          "logHash": "a88993b6"
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 101,
+          "logHash": "6e511723"
+        },
+        {
+          "gen": 2,
+          "eggs": 7,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 301,
+          "logHash": "d2e37d89"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 46,
+          "logHash": "e92c22de"
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 84,
+          "logHash": "2543a8a6"
+        },
+        {
+          "gen": 2,
+          "eggs": 11,
+          "rivalEggs": 17,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 430,
+          "logHash": "e4e83c09"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 11,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 175,
+          "logHash": "7ac3f4ab"
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 3,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 295,
+          "logHash": "99f6a941"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 119,
+          "logHash": "6a733912"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 20,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 430,
+          "logHash": "d8907de7"
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 48,
+          "logHash": "2c03f1b5"
+        },
+        {
+          "gen": 2,
+          "eggs": 6,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 270,
+          "logHash": "490f335d"
+        },
+        {
+          "gen": 3,
+          "eggs": 7,
+          "rivalEggs": 13,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 419,
+          "logHash": "15271b45"
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 191,
+          "logHash": "a56a272a"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 178,
+          "logHash": "bad4d0ec"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 123,
+          "logHash": "726ce301"
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 7,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 431,
+          "logHash": "960bfaf1"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 161,
+          "logHash": "211b3086"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 121,
+          "logHash": "28cbef58"
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 84,
+          "logHash": "de2d1f58"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 165,
+          "logHash": "72f836b4"
+        },
+        {
+          "gen": 3,
+          "eggs": 2,
+          "rivalEggs": 14,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 371,
+          "logHash": "5d754d6b"
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 5,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 392,
+          "logHash": "8a30210c"
+        },
+        {
+          "gen": 2,
+          "eggs": 4,
+          "rivalEggs": 17,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 431,
+          "logHash": "a130c7d5"
+        },
+        {
+          "gen": 3,
+          "eggs": 7,
+          "rivalEggs": 18,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 431,
+          "logHash": "deb122bf"
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 3,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 159,
+          "logHash": "3466aad4"
+        },
+        {
+          "gen": 2,
+          "eggs": 3,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 136,
+          "logHash": "854fed07"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 63,
+          "logHash": "8e9b7daf"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 44,
+          "logHash": "a441677c"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 67,
+          "logHash": "18399b8a"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 119,
+          "logHash": "70e4f79c"
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "brain": "circuit",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 1,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 227,
+          "logHash": "2ca8dfab"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 167,
+          "logHash": "ea017fe2"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 52,
+          "logHash": "90f07a50"
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 6,
+          "rivalEggs": 22,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "0f848439"
+        },
+        {
+          "gen": 2,
+          "eggs": 7,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 61,
+          "logHash": "cd3f278b"
+        },
+        {
+          "gen": 3,
+          "eggs": 15,
+          "rivalEggs": 18,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "32731eb8"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 28,
+          "logHash": "b5eaba5e"
+        },
+        {
+          "gen": 2,
+          "eggs": 4,
+          "rivalEggs": 11,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 45,
+          "logHash": "320f52cb"
+        },
+        {
+          "gen": 3,
+          "eggs": 20,
+          "rivalEggs": 17,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "470857ec"
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 13,
+          "rivalEggs": 24,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "15e386ac"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 21,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "54c92d85"
+        },
+        {
+          "gen": 3,
+          "eggs": 14,
+          "rivalEggs": 23,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "b59b23b7"
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 4,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 53,
+          "logHash": "b58f7254"
+        },
+        {
+          "gen": 2,
+          "eggs": 2,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 55,
+          "logHash": "75088c25"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 14,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "c1fb5348"
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 58,
+          "logHash": "034468f4"
+        },
+        {
+          "gen": 2,
+          "eggs": 15,
+          "rivalEggs": 9,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 76,
+          "logHash": "90a1c967"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 35,
+          "logHash": "88d04777"
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 14,
+          "rivalEggs": 16,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 83,
+          "logHash": "4b6880f4"
+        },
+        {
+          "gen": 2,
+          "eggs": 23,
+          "rivalEggs": 19,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "261adfb2"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 34,
+          "logHash": "f2f77e71"
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 14,
+          "rivalEggs": 13,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "6ed9802d"
+        },
+        {
+          "gen": 2,
+          "eggs": 18,
+          "rivalEggs": 12,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 94,
+          "logHash": "b591270f"
+        },
+        {
+          "gen": 3,
+          "eggs": 9,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 73,
+          "logHash": "6648b7b0"
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 11,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "deca7c57"
+        },
+        {
+          "gen": 2,
+          "eggs": 11,
+          "rivalEggs": 11,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "5120131c"
+        },
+        {
+          "gen": 3,
+          "eggs": 21,
+          "rivalEggs": 12,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "f4cbcafa"
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 48,
+          "logHash": "fa2fefc1"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 6,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "ed734d38"
+        },
+        {
+          "gen": 3,
+          "eggs": 11,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "f816898b"
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 8,
+          "rivalEggs": 9,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "f8c37b4f"
+        },
+        {
+          "gen": 2,
+          "eggs": 3,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 33,
+          "logHash": "385449f2"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 80,
+          "logHash": "d28008b7"
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 8,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 69,
+          "logHash": "5cb90ad3"
+        },
+        {
+          "gen": 2,
+          "eggs": 12,
+          "rivalEggs": 14,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "7e497467"
+        },
+        {
+          "gen": 3,
+          "eggs": 6,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 25,
+          "logHash": "eecf4fee"
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 4,
+          "rivalEggs": 11,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 93,
+          "logHash": "4008dc0f"
+        },
+        {
+          "gen": 2,
+          "eggs": 10,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "a44209b1"
+        },
+        {
+          "gen": 3,
+          "eggs": 12,
+          "rivalEggs": 5,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 63,
+          "logHash": "7c255c32"
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 3,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 46,
+          "logHash": "f6ce5116"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "ea46d572"
+        },
+        {
+          "gen": 3,
+          "eggs": 4,
+          "rivalEggs": 3,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 24,
+          "logHash": "fc572c1c"
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 3,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 15,
+          "logHash": "bf524bf3"
+        },
+        {
+          "gen": 2,
+          "eggs": 6,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 69,
+          "logHash": "0a3b6e40"
+        },
+        {
+          "gen": 3,
+          "eggs": 8,
+          "rivalEggs": 9,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "0a989b1c"
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 5,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 72,
+          "logHash": "38447973"
+        },
+        {
+          "gen": 2,
+          "eggs": 13,
+          "rivalEggs": 10,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "658d9336"
+        },
+        {
+          "gen": 3,
+          "eggs": 5,
+          "rivalEggs": 6,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 38,
+          "logHash": "51163842"
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 12,
+          "rivalEggs": 14,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "ea41606c"
+        },
+        {
+          "gen": 2,
+          "eggs": 16,
+          "rivalEggs": 14,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "7fc0dfa6"
+        },
+        {
+          "gen": 3,
+          "eggs": 17,
+          "rivalEggs": 16,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "5d3dc9bf"
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 2,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 27,
+          "logHash": "ce9588e2"
+        },
+        {
+          "gen": 2,
+          "eggs": 9,
+          "rivalEggs": 19,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "bb49629d"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 15,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 61,
+          "logHash": "3b201859"
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 11,
+          "rivalEggs": 8,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "3167e58e"
+        },
+        {
+          "gen": 2,
+          "eggs": 4,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 14,
+          "logHash": "ba6376ea"
+        },
+        {
+          "gen": 3,
+          "eggs": 3,
+          "rivalEggs": 8,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 48,
+          "logHash": "a9957ac0"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 6,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 60,
+          "logHash": "3e7f3239"
+        },
+        {
+          "gen": 2,
+          "eggs": 3,
+          "rivalEggs": 1,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 18,
+          "logHash": "8aefd695"
+        },
+        {
+          "gen": 3,
+          "eggs": 13,
+          "rivalEggs": 7,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 84,
+          "logHash": "e54540dc"
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "brain": "judgment",
+      "gens": [
+        {
+          "gen": 1,
+          "eggs": 3,
+          "rivalEggs": 15,
+          "survived": true,
+          "deathReason": "time",
+          "decisions": 97,
+          "logHash": "6159894a"
+        },
+        {
+          "gen": 2,
+          "eggs": 1,
+          "rivalEggs": 2,
+          "survived": false,
+          "deathReason": "predator",
+          "decisions": 21,
+          "logHash": "ec5270b4"
+        },
+        {
+          "gen": 3,
+          "eggs": 1,
+          "rivalEggs": 4,
+          "survived": false,
+          "deathReason": "energy",
+          "decisions": 17,
+          "logHash": "dbc7819c"
+        }
+      ]
+    }
+  ]
+}
