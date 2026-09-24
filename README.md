@@ -19,7 +19,7 @@ vendors these files.
 
 | Module | What it holds |
 | --- | --- |
-| [`js/sim.js`](js/sim.js) | The deterministic dish world: seeded RNG (`makeRng`), the mutation draft (`draftCards`, `draftSeed`), the escape assay and the real-vs-shuffled control experiment (`runExperiment`) |
+| [`js/sim.js`](js/sim.js) | The deterministic dish world: seeded RNG (`makeRng`), the mutation draft (`draftCards`, `draftSeed`), the escape assay and the real-vs-swapped wiring check (`runExperiment`) |
 | [`js/gf-neuron.js`](js/gf-neuron.js) | The brainstem: a leaky integrate-and-fire **Giant Fiber** driven by **LC4** (angular velocity) and **LPLC2** (looming) — the two visual neurons that dominate the real fruit fly's escape command cell |
 | [`js/cx-circuit.js`](js/cx-circuit.js) | **FFW-CX/0.1** — a 24-neuron spiking circuit with connectome-inspired structure. All randomness is at construction time, which is what makes it examinable |
 | [`js/brain.js`](js/brain.js) | The brain contract: signals in → behavior distribution + confidence out, every decision sealed with a FNV-1a `contentHash` |
@@ -38,11 +38,16 @@ runner — no install step) fails if any of them drift:
 | Fact | Value | Source |
 | --- | --- | --- |
 | Real connectivity escapes telegraphed lunges | **100%** of 200 (`runExperiment(1337)`) | `tests/gf-neuron.test.ts` |
-| Shuffled connectivity escapes | **68%** of 200 | same control, same seed |
+| Swapped connectivity escapes | **68%** of 200 | same wiring check, same seed |
 | FFW-CX behavior trace, seed 42 | `contentHash = 9fb9e0d0` | `tests/cx-circuit.test.ts` |
 | FFW-CX hunger assay, bucket 1 | 274 of 300 ticks | `tests/cx-circuit.test.ts` |
 | Mutation draft golden vector | `contentHash = 0f4d39c3` | `tests/sim-cards.test.ts` |
 | Escape trial seed 12345, real | `{escaped: true, lead: 0.1833…}` | `tests/gf-neuron.test.ts` |
+
+The 100/68 pair is a **simplified two-channel wiring check**, not a control experiment on
+the connectome: within this model, real-beats-swapped holds by construction, and the escape
+rates are a function of hand-set parameters. (The code identifier stays `"shuffled"` — the
+pinned golden vectors hash it.)
 
 ## Use it
 
