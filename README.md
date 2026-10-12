@@ -8,6 +8,8 @@
   </p>
 </div>
 
+> Part of [Fruit Fly World](https://github.com/fruitflyworld) — the trading fly at fruitfly.world runs on this core.
+
 ---
 
 Zero dependencies. Zero build. Plain ES modules that run in the browser and, unchanged, in
